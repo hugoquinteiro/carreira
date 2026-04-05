@@ -1,7 +1,10 @@
 import { profile } from "@/data/portfolio";
 import { ChevronDown } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const HeroSection = () => {
+  const initials = profile.name.split(" ").map(n => n[0]).join("");
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background effects */}
@@ -14,9 +17,18 @@ const HeroSection = () => {
         <div className="fade-up mb-8 flex justify-center">
           <div className="relative">
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary to-accent p-[3px]">
-              <div className="w-full h-full rounded-full bg-card flex items-center justify-center text-4xl md:text-5xl font-heading font-bold text-primary">
-                {profile.name.split(" ").map(n => n[0]).join("")}
-              </div>
+              <Avatar className="w-full h-full">
+                {profile.photo && (
+                  <AvatarImage
+                    src={profile.photo}
+                    alt={profile.name}
+                    className="object-cover"
+                  />
+                )}
+                <AvatarFallback className="bg-card text-4xl md:text-5xl font-heading font-bold text-primary">
+                  {initials}
+                </AvatarFallback>
+              </Avatar>
             </div>
             <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-4 border-background" />
           </div>
