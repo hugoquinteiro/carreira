@@ -144,12 +144,18 @@ export const projectsData: Project[] = [
 ];
 
 export const profile = {
-  name: "João Silva",
-  title: "Tech Lead | Arquiteto de Software | DBA",
-  summary:
-    "Profissional com mais de 15 anos de experiência em tecnologia, especializado em arquitetura de software, administração de bancos de dados e liderança técnica. Apaixonado por resolver problemas complexos e construir soluções escaláveis.",
-  photo: "", // URL da foto profissional — deixe vazio para exibir as iniciais
-  email: "joao.silva@email.com",
-  linkedin: "https://linkedin.com/in/joaosilva",
+  name: "Hugo Ferreira Quinteiro",
+  title:
+    "Especialista em ERP & Dados | Sankhya | Oracle PL/SQL | APIs Node.js | BI & Automação de Processos",
+  summary: `Especialista em ERP, Banco de Dados e Automação de Processos com mais de 20 anos de experiência em sistemas de gestão empresarial.
+
+Atuo como referência técnica na evolução do ERP Sankhya, conectando ERP, banco Oracle, BI e APIs para eliminar tarefas manuais e gerar eficiência operacional real.
+
+Minha atuação envolve customizações avançadas no Sankhya, desenvolvimento de integrações com Node.js, modelagem e otimização de bancos Oracle/PostgreSQL e estruturação de dados para BI com Qlik Sense e Power BI.
+
+Possuo forte conhecimento em fiscal e financeiro (SPED, Sintegra, conciliações e interfaces bancárias) e grande experiência traduzindo necessidades do negócio em soluções técnicas práticas.`,
+  email: "hugo@gmail.com",
+  linkedin: "https://www.linkedin.com/in/hugofquinteiro/",
+  photo:"",
   whatsapp: "5511999999999",
 };
