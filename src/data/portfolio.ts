@@ -142,6 +142,7 @@ export const profile = {
   title: "Tech Lead | Arquiteto de Software | DBA",
   summary:
     "Profissional com mais de 15 anos de experiência em tecnologia, especializado em arquitetura de software, administração de bancos de dados e liderança técnica. Apaixonado por resolver problemas complexos e construir soluções escaláveis.",
+  photo: "", // URL da foto profissional — deixe vazio para exibir as iniciais
   email: "joao.silva@email.com",
   linkedin: "https://linkedin.com/in/joaosilva",
   whatsapp: "5511999999999",
