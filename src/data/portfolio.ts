@@ -156,6 +156,6 @@ Minha atuação envolve customizações avançadas no Sankhya, desenvolvimento d
 Possuo forte conhecimento em fiscal e financeiro (SPED, Sintegra, conciliações e interfaces bancárias) e grande experiência traduzindo necessidades do negócio em soluções técnicas práticas.`,
   email: "hugo@gmail.com",
   linkedin: "https://www.linkedin.com/in/hugofquinteiro/",
-  photo:"",
+  photo:"/fotoHero.png",
   whatsapp: "5511999999999",
 };
