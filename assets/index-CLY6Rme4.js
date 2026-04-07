@@ -151,7 +151,7 @@ Atuo como referência técnica na evolução do ERP Sankhya, conectando ERP, ban
 
 Minha atuação envolve customizações avançadas no Sankhya, desenvolvimento de integrações com Node.js, modelagem e otimização de bancos Oracle/PostgreSQL e estruturação de dados para BI com Qlik Sense e Power BI.
 
-Possuo forte conhecimento em fiscal e financeiro (SPED, Sintegra, conciliações e interfaces bancárias) e grande experiência traduzindo necessidades do negócio em soluções técnicas práticas.`,email:"hugo@gmail.com",linkedin:"https://www.linkedin.com/in/hugofquinteiro/",photo:"fotoHero.png",whatsapp:"5511985258270"};var jv={exports:{}},Mv={};/**
+Possuo forte conhecimento em fiscal e financeiro (SPED, Sintegra, conciliações e interfaces bancárias) e grande experiência traduzindo necessidades do negócio em soluções técnicas práticas.`,email:"hugo@gmail.com",linkedin:"https://www.linkedin.com/in/hugofquinteiro/",photo:"/fotoHero.png",whatsapp:"5511985258270"};var jv={exports:{}},Mv={};/**
  * @license React
  * use-sync-external-store-shim.production.js
  *
