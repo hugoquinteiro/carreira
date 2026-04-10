@@ -10,7 +10,9 @@ interface LanguageContextType {
   data: typeof br;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextType | undefined>(
+  undefined
+);
 
 const dataMap = { br, en };
 
