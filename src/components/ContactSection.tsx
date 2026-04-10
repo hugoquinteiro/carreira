@@ -1,36 +1,39 @@
-import { profile } from "@/data/portfolio";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Linkedin, Mail, MessageCircle } from "lucide-react";
 
-const contacts = [
-  {
-    label: "LinkedIn",
-    icon: Linkedin,
-    href: profile.linkedin,
-    className: "hover:border-[#0A66C2]/40 hover:text-[#0A66C2]",
-  },
-  {
-    label: "Email",
-    icon: Mail,
-    href: `mailto:${profile.email}`,
-    className: "hover:border-primary/40 hover:text-primary",
-  },
-  {
-    label: "WhatsApp",
-    icon: MessageCircle,
-    href: `https://wa.me/${profile.whatsapp}`,
-    className: "hover:border-green-500/40 hover:text-green-500",
-  },
-];
-
 const ContactSection = () => {
+  const { data } = useLanguage();
+  const { profile, labels } = data;
+
+  const contacts = [
+    {
+      label: "LinkedIn",
+      icon: Linkedin,
+      href: profile.linkedin,
+      className: "hover:border-[#0A66C2]/40 hover:text-[#0A66C2]",
+    },
+    {
+      label: "Email",
+      icon: Mail,
+      href: `mailto:${profile.email}`,
+      className: "hover:border-primary/40 hover:text-primary",
+    },
+    {
+      label: "WhatsApp",
+      icon: MessageCircle,
+      href: `https://wa.me/${profile.whatsapp}`,
+      className: "hover:border-green-500/40 hover:text-green-500",
+    },
+  ];
+
   return (
     <section id="contact" className="py-24 px-6">
       <div className="container max-w-2xl text-center">
         <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-          <span className="text-gradient">Vamos Conversar?</span>
+          <span className="text-gradient">{labels.contactTitle}</span>
         </h2>
         <p className="text-muted-foreground mb-10">
-          Gosta de falar sobre tecnologia, dados, processos, entre em contato.
+          {labels.contactSubtitle}
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -49,7 +52,7 @@ const ContactSection = () => {
         </div>
 
         <p className="mt-16 text-xs text-muted-foreground/50">
-          © {new Date().getFullYear()} {profile.name}. Todos os direitos reservados.
+          © {new Date().getFullYear()} {profile.name}. {labels.contactRights}
         </p>
       </div>
     </section>
