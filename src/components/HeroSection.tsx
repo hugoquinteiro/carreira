@@ -6,6 +6,9 @@ const HeroSection = () => {
   const { data } = useLanguage();
   const { profile, labels } = data;
   const initials = profile.name.split(" ").map(n => n[0]).join("");
+  const scrollToTimeline = () => {
+    document.getElementById("timeline")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -42,13 +45,14 @@ const HeroSection = () => {
           {profile.summary}
         </p>
 
-        <a
-          href="#timeline"
+        <button
+          type="button"
+          onClick={scrollToTimeline}
           className="inline-flex flex-col items-center mt-16 text-muted-foreground hover:text-primary transition-colors"
         >
           <span className="text-xs uppercase tracking-widest mb-2">{labels.heroExplore}</span>
           <ChevronDown className="w-5 h-5 animate-bounce" />
-        </a>
+        </button>
       </div>
     </section>
   );

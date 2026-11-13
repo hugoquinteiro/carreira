@@ -53,7 +53,7 @@ const TimelineSection = () => {
             <button
               key={btn.value}
               onClick={() => setFilter(btn.value)}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300
+              className={`flex items-center gap-4 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300
                 ${filter === btn.value
                   ? "bg-primary text-primary-foreground glow-primary"
                   : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
@@ -86,7 +86,7 @@ const TimelineSection = () => {
 
                   <div className={`ml-14 md:ml-0 md:w-[calc(50%-2rem)] ${isLeft ? "md:mr-auto md:pr-8" : "md:ml-auto md:pl-8"}`}>
                     <AccordionItem value={item.id} className="border-none">
-                      <AccordionTrigger className="bg-card hover:bg-card/80 rounded-xl px-5 py-4 hover:no-underline transition-all group glow-primary/0 hover:glow-primary">
+                      <AccordionTrigger className="bg-card hover:bg-card/80 rounded-xl px-5 py-4 hover:no-underline transition-all group glow-primary/0 hover:glow-primary data-[state=open]:rounded-b-none">
                         <div className="flex flex-col items-start text-left gap-1">
                           <div className="flex items-center gap-2">
                             <Icon className={`w-4 h-4 ${item.type === "study" ? "text-study" : "text-work"}`} />
@@ -105,8 +105,8 @@ const TimelineSection = () => {
                           <span className="text-xs text-muted-foreground">{item.institution}</span>
                         </div>
                       </AccordionTrigger>
-                      <AccordionContent className="bg-card rounded-b-xl px-5 pb-5 -mt-2">
-                        <p className="text-sm text-secondary-foreground/80 mb-4">{item.description}</p>
+                      <AccordionContent className="bg-card rounded-b-xl px-5 pt-3 pb-5">
+                        <p className="text-sm leading-relaxed text-secondary-foreground/80 mb-4">{item.description}</p>
 
                         <div className="space-y-3">
                           <div>

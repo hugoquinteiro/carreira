@@ -98,7 +98,7 @@ const ProjectsSection = () => {
                             <h4 className="text-sm font-semibold flex items-center gap-1.5 mb-2 text-primary">
                               <BookOpen className="w-4 h-4" /> {labels.projectStory}
                             </h4>
-                            <p className="text-sm text-muted-foreground leading-relaxed">{project.story}</p>
+                            <p className="text-sm text-muted-foreground leading-relaxed" style={{ whiteSpace: "pre-line" }}>{project.story}</p>
                           </div>
                         )}
                         {project.metrics && project.metrics.length > 0 && (
