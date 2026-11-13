@@ -102,42 +102,40 @@ export const timelineData: TimelineEntry[] = [
     ],
     isCurrent: true,
   },
+  {
+    id: "p5",
+    name: "Dynamic Management P&L – Sankhya ERP + Qlik Sense",
+    description:
+      "Development of a dynamic management P&L solution integrated with Sankhya ERP and Qlik Sense, allowing managers to configure reporting structures and analyze financial results down to the original transaction level.",
+    technologies: ["Sankhya ERP", "Oracle", "SQL", "Qlik Sense", "ETL"],
+    story: `The project started with a seemingly simple requirement: developing a Profit and Loss Statement (P&L) to help managers monitor the company's financial performance.
 
-{
-  id: "p5-en",
-  name: "Dynamic Management P&L – Sankhya ERP + Qlik Sense",
-  description:
-    "Development of a dynamic management P&L solution integrated with Sankhya ERP and Qlik Sense, allowing managers to configure reporting structures and analyze financial results down to the original transaction level.",
-  technologies: ["Sankhya ERP", "Oracle", "SQL", "Qlik Sense", "ETL"],
-  story: `The project started with a seemingly simple requirement: developing a Profit and Loss Statement (P&L) to help managers monitor the company's financial performance.
+            However, each company has its own reporting structure and business requirements. The need to analyze results across different sales channels (Cost Centers), including consolidated information from multiple companies, made the project much more comprehensive.
 
-          However, each company has its own reporting structure and business requirements. The need to analyze results across different sales channels (Cost Centers), including consolidated information from multiple companies, made the project much more comprehensive.
+            Initially, the idea was to retrieve data from Sankhya ERP and display it in Qlik Sense. The solution worked, but I identified an important limitation: in a constantly growing and changing company, reporting structures also need to evolve.
 
-          Initially, the idea was to retrieve data from Sankhya ERP and display it in Qlik Sense. The solution worked, but I identified an important limitation: in a constantly growing and changing company, reporting structures also need to evolve.
+            Managers needed the flexibility to reorganize sections and headings, add or remove financial categories and cost centers, without relying on the IT team for every change.
 
-          Managers needed the flexibility to reorganize sections and headings, add or remove financial categories and cost centers, without relying on the IT team for every change.
+            The real challenge was turning a static report into a dynamic structure, allowing the Financial Controller to manage the P&L configuration independently.
 
-          The real challenge was turning a static report into a dynamic structure, allowing the Financial Controller to manage the P&L configuration independently.
+            After significant development and continuous improvements, the solution has been running for at least 5 years.
 
-          After significant development and continuous improvements, the solution has been running for at least 5 years.
+            Today, it supports both summarized and detailed analysis, allowing users to navigate from annual or monthly financial results down to individual transactions, such as an invoice, a financial entry, or even interest and penalties associated with a transaction.
 
-          Today, it supports both summarized and detailed analysis, allowing users to navigate from annual or monthly financial results down to individual transactions, such as an invoice, a financial entry, or even interest and penalties associated with a transaction.
-
-          The goal was not simply to build a management report, but to create a tool that could evolve alongside the business while giving users more autonomy in their daily work.`,
-  metrics: [
-    "Solution running in production for at least 5 years",
-    "Consolidated reporting across multiple companies and sales channels",
-    "Self-service P&L configuration for the Financial Controller",
-    "Drill-down analysis from consolidated results to individual transactions"
-  ],
-  learnings: [
-    "Designing flexible and dynamic management reporting structures",
-    "Data integration between Sankhya ERP, Oracle and Qlik Sense",
-    "Building summarized and detailed financial analysis",
-    "Translating business requirements into scalable, long-term solutions"
-  ],
-},
-
+            The goal was not simply to build a management report, but to create a tool that could evolve alongside the business while giving users more autonomy in their daily work.`,
+    metrics: [
+      "Solution running in production for at least 5 years",
+      "Consolidated reporting across multiple companies and sales channels",
+      "Self-service P&L configuration for the Financial Controller",
+      "Drill-down analysis from consolidated results to individual transactions"
+    ],
+    learnings: [
+      "Designing flexible and dynamic management reporting structures",
+      "Data integration between Sankhya ERP, Oracle and Qlik Sense",
+      "Building summarized and detailed financial analysis",
+      "Translating business requirements into scalable, long-term solutions"
+    ],
+  }
 ];
 
 export const projectsData: Project[] = [
